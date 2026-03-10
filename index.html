@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FMtv - Diversão para toda família</title>
+<title>FMtv - Entretenimento sem limites</title>
 
 <style>
 
@@ -15,98 +15,165 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#0a0a0a;
+background:#0b0b0b;
 color:white;
 }
 
-header{
-background:linear-gradient(135deg,#ff3b3b,#7a0000);
-padding:80px 20px;
-text-align:center;
+/* NAVBAR */
+
+nav{
+background:#000;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #222;
 }
 
-header h1{
+nav h2{
+color:#ff2e2e;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#8b0000,#000);
+}
+
+.hero h1{
 font-size:50px;
 margin-bottom:20px;
 }
 
-header p{
+.hero p{
 font-size:20px;
-margin-bottom:30px;
+color:#ddd;
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
 }
 
 .btn{
 background:#25D366;
-color:white;
-padding:15px 35px;
+padding:16px 35px;
 border-radius:8px;
+color:white;
+font-weight:bold;
 font-size:20px;
 text-decoration:none;
-font-weight:bold;
+display:inline-block;
+transition:0.3s;
 }
 
+.btn:hover{
+transform:scale(1.05);
+}
+
+.preview{
+margin-top:50px;
+}
+
+.preview img{
+width:100%;
+max-width:850px;
+border-radius:15px;
+box-shadow:0 0 25px rgba(255,0,0,0.4);
+}
+
+/* BENEFICIOS */
+
 .section{
-padding:60px 20px;
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
 text-align:center;
 }
 
 .section h2{
-font-size:35px;
+font-size:36px;
 margin-bottom:40px;
+color:#ff4040;
 }
 
-.beneficios{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
 }
 
 .card{
-background:#1a1a1a;
+background:#111;
 padding:30px;
-border-radius:10px;
+border-radius:12px;
+border:1px solid #222;
+transition:0.3s;
 }
 
-.preco{
-background:#111;
+.card:hover{
+transform:translateY(-5px);
+border-color:#ff4040;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#ff5a5a;
+}
+
+/* DESTAQUE */
+
+.destaque{
+background:linear-gradient(135deg,#111,#000);
 padding:80px 20px;
 text-align:center;
 }
 
-.preco h2{
+.destaque h2{
 font-size:40px;
 margin-bottom:20px;
+color:#ff4040;
 }
 
-.preco p{
-font-size:30px;
+.destaque p{
+font-size:20px;
+color:#ccc;
 margin-bottom:30px;
 }
 
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-color:white;
-text-decoration:none;
-box-shadow:0 0 15px rgba(0,0,0,0.4);
+/* CTA */
+
+.cta{
+background:#8b0000;
+padding:70px 20px;
+text-align:center;
 }
+
+.cta h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+font-size:18px;
+}
+
+/* FOOTER */
 
 footer{
 background:#000;
-padding:30px;
 text-align:center;
-margin-top:40px;
+padding:25px;
+color:#777;
+font-size:14px;
 }
 
 </style>
@@ -114,72 +181,89 @@ margin-top:40px;
 
 <body>
 
-<header>
+<nav>
+<h2>FMtv</h2>
+<div>
+<a href="#">Início</a>
+<a href="#">Benefícios</a>
+<a href="#">Contato</a>
+</div>
+</nav>
 
-<h1>FMtv</h1>
+<section class="hero">
 
-<p>Diversão para toda a família por apenas</p>
+<h1>Entretenimento sem limites</h1>
 
-<h2 style="font-size:45px;color:#ffd700;">R$30 / mês</h2>
+<p>
+Tenha acesso a uma grande variedade de conteúdos para toda família.
+Assista quando quiser, onde quiser.
+</p>
 
-<br>
+<a class="btn" href="https://wa.me/5500000000000?text=Quero%20assinar%20a%20FMtv">ASSINAR AGORA</a>
 
-<a class="btn" href="https://wa.me/5548996308425?text=Olá quero assinar a FMtv">
-ASSINAR AGORA
-</a>
+<div class="preview">
+<img src="https://cdn.discordapp.com/attachments/1444829921246445571/1481044966368084058/Screenshot_20260310_184324_Instagram.jpg">
+</div>
 
-</header>
+</section>
 
 <section class="section">
 
-<h2>O que você terá</h2>
+<h2>Por que escolher a FMtv?</h2>
 
-<div class="beneficios">
-
-<div class="card">
-<h3>📺 Canais</h3>
-<p>Centenas de canais ao vivo.</p>
-</div>
+<div class="cards">
 
 <div class="card">
 <h3>🎬 Filmes</h3>
-<p>Filmes novos e clássicos.</p>
+<p>Grandes sucessos e clássicos do cinema para você assistir quando quiser.</p>
 </div>
 
 <div class="card">
 <h3>📺 Séries</h3>
-<p>Séries completas atualizadas.</p>
+<p>Séries completas para maratonar sem limites.</p>
 </div>
 
 <div class="card">
-<h3>🎭 Novelas</h3>
-<p>Novelas para toda família.</p>
+<h3>📡 Canais</h3>
+<p>Diversos canais ao vivo para toda a família.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Fácil de usar</h3>
+<p>Interface simples e rápida para qualquer pessoa utilizar.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="preco">
+<section class="destaque">
 
-<h2>Plano único</h2>
+<h2>Entretenimento para toda família</h2>
 
-<p>R$30 por mês</p>
+<p>
+A FMtv foi criada para oferecer uma experiência simples, rápida e completa.
+Tudo que você precisa para se divertir em um só lugar.
+</p>
 
-<a class="btn" href="https://wa.me/5548996308425?text=Olá quero assinar a FMtv">
-ASSINAR via WhatsApp
-</a>
+<a class="btn" href="https://wa.me/5500000000000?text=Quero%20mais%20informações%20sobre%20a%20FMtv">FALAR NO WHATSAPP</a>
 
 </section>
 
-<a class="whatsapp-float" href="https://wa.me/5548996308425?text=Olá quero assinar a FMtv">
-☎
-</a>
+<section class="cta">
+
+<h2>Comece hoje mesmo</h2>
+
+<p>
+Entre em contato agora e descubra como ter acesso ao melhor entretenimento.
+</p>
+
+<a class="btn" href="https://wa.me/5500000000000?text=Quero%20assinar%20agora">COMEÇAR AGORA</a>
+
+</section>
 
 <footer>
-
-<p>© 2026 FMtv - Todos os direitos reservados</p>
-
+© 2026 FMtv - Todos os direitos reservados
 </footer>
 
 </body>

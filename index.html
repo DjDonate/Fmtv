@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FMtv - Entretenimento sem limites</title>
+
+<meta name="description" content="Assista filmes, séries e canais ao vivo com a FMtv. Entretenimento completo para toda família.">
+<meta name="keywords" content="iptv, filmes, séries, tv online, streaming">
 
 <style>
 
@@ -28,6 +32,9 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 border-bottom:1px solid #222;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 nav h2{
@@ -59,7 +66,12 @@ font-size:20px;
 color:#ddd;
 max-width:700px;
 margin:auto;
-margin-bottom:35px;
+margin-bottom:20px;
+}
+
+.urgencia{
+color:#ff4d4d;
+margin-bottom:20px;
 }
 
 .btn{
@@ -76,6 +88,7 @@ transition:0.3s;
 
 .btn:hover{
 transform:scale(1.05);
+box-shadow:0 0 15px rgba(37,211,102,0.6);
 }
 
 .preview{
@@ -89,7 +102,7 @@ border-radius:15px;
 box-shadow:0 0 25px rgba(255,0,0,0.4);
 }
 
-/* BENEFICIOS */
+/* SECTION */
 
 .section{
 padding:70px 20px;
@@ -176,6 +189,50 @@ color:#777;
 font-size:14px;
 }
 
+/* WHATSAPP FIXO */
+
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVO */
+
+@media (max-width:600px){
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section h2,
+.destaque h2,
+.cta h2{
+font-size:26px;
+}
+
+.btn{
+font-size:16px;
+padding:14px 25px;
+}
+
+}
+
 </style>
 </head>
 
@@ -184,13 +241,13 @@ font-size:14px;
 <nav>
 <h2>FMtv</h2>
 <div>
-<a href="#">Início</a>
-<a href="#">Benefícios</a>
-<a href="#">Contato</a>
+<a href="#inicio">Início</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#contato">Contato</a>
 </div>
 </nav>
 
-<section class="hero">
+<section id="inicio" class="hero">
 
 <h1>Entretenimento sem limites</h1>
 
@@ -199,15 +256,22 @@ Tenha acesso a uma grande variedade de conteúdos para toda família.
 Assista quando quiser, onde quiser.
 </p>
 
-<a class="btn" href="https://wa.me/5548996308425?text=Quero%20assinar%20a%20FMtv">ASSINAR AGORA</a>
+<p class="urgencia">🔥 Vagas limitadas hoje</p>
+
+<a class="btn" href="https://wa.me/5548996308425?text=Quero%20assinar%20a%20FMtv">
+ASSINAR AGORA
+</a>
 
 <div class="preview">
-<img src="https://cdn.discordapp.com/attachments/1444829921246445571/1481044966368084058/Screenshot_20260310_184324_Instagram.jpg">
+<img 
+src="https://via.placeholder.com/850x500"
+loading="lazy"
+alt="Preview FMtv">
 </div>
 
 </section>
 
-<section class="section">
+<section id="beneficios" class="section">
 
 <h2>Por que escolher a FMtv?</h2>
 
@@ -215,7 +279,7 @@ Assista quando quiser, onde quiser.
 
 <div class="card">
 <h3>🎬 Filmes</h3>
-<p>Grandes sucessos e clássicos do cinema para você assistir quando quiser.</p>
+<p>Grandes sucessos e clássicos do cinema.</p>
 </div>
 
 <div class="card">
@@ -230,7 +294,7 @@ Assista quando quiser, onde quiser.
 
 <div class="card">
 <h3>⚡ Fácil de usar</h3>
-<p>Interface simples e rápida para qualquer pessoa utilizar.</p>
+<p>Interface simples e rápida.</p>
 </div>
 
 </div>
@@ -242,29 +306,35 @@ Assista quando quiser, onde quiser.
 <h2>Entretenimento para toda família</h2>
 
 <p>
-A FMtv foi criada para oferecer uma experiência simples, rápida e completa.
-Tudo que você precisa para se divertir em um só lugar.
+Experiência simples, rápida e completa em um só lugar.
 </p>
 
-<a class="btn" href="https://wa.me/5500000000000?text=Quero%20mais%20informações%20sobre%20a%20FMtv">FALAR NO WHATSAPP</a>
+<a class="btn" href="https://wa.me/5548996308425?text=Quero%20mais%20informações">
+FALAR NO WHATSAPP
+</a>
 
 </section>
 
-<section class="cta">
+<section id="contato" class="cta">
 
 <h2>Comece hoje mesmo</h2>
 
 <p>
-Entre em contato agora e descubra como ter acesso ao melhor entretenimento.
+Entre em contato agora e tenha acesso imediato.
 </p>
 
-<a class="btn" href="https://wa.me/5500000000000?text=Quero%20assinar%20agora">COMEÇAR AGORA</a>
+<a class="btn" href="https://wa.me/5548996308425?text=Quero%20assinar%20agora">
+COMEÇAR AGORA
+</a>
 
 </section>
 
 <footer>
 © 2026 FMtv - Todos os direitos reservados
 </footer>
+
+<!-- BOTÃO FLUTUANTE -->
+<a class="whatsapp-fixo" href="https://wa.me/5548996308425">💬</a>
 
 </body>
 </html>
